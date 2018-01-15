@@ -1,0 +1,68 @@
+div {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.chart {
+  background: black;
+  height: 500px;
+  padding: 20px;
+  width: 500px;
+}
+
+.circle-outer {
+  background-color: rgba(0, 195, 255, 0.295);
+  border: 2px solid rgb(100, 200, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  clip-path: circle();
+}
+
+.circle-percentage {
+  background-color: rgba(100, 201, 255, 0.548);
+  clip-path: polygon(-300% -300%, -300% 300%, 600% 49%, 50% 50%, 600% 51%);
+  height: 200px;
+  position: absolute;
+  transition: all 500ms;
+  width: 200px;
+  z-index: 0;
+}
+
+.circle-inner {
+  background-color: black;
+  border: 2px solid rgb(100, 200, 255);
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  z-index: 100;
+}
+
+/* Bar Chart */
+
+.bar-chart {
+  margin-top: 20px;
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  width: 400px;
+}
+
+.bar-outer {
+  height: 100%;
+  width: 30px;
+  background-color: rgba(0, 195, 255, 0.295);
+  border: 2px solid rgb(100, 200, 255);
+}
+
+.bar-percentage {
+  background-color: rgba(100, 201, 255, 0.548);
+  height: 100%;
+  width: 100%;
+  clip-path: inset(30% 0% 0% 0%);
+  transition: all 500ms;
+}

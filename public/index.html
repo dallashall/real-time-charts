@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <title>Real Time Charts</title>
+</head>
+<body>
+  <main>
+    <h1>Test Chart</h1>
+    <section>
+      <div class="chart">
+        <div class="circle-outer">
+          <div class="circle-percentage"></div>
+          <div class="circle-inner">
+          </div>
+        </div>
+        <div class="bar-chart">
+          <div class="bar-outer">
+            <div class="bar-percentage"></div>
+          </div>
+          <div class="bar-outer">
+            <div class="bar-percentage"></div>
+          </div>
+          <div class="bar-outer">
+            <div class="bar-percentage"></div>
+          </div>
+          <div class="bar-outer">
+            <div class="bar-percentage"></div>
+          </div>
+        </div>
+        <input type="range" name="slider" id="slider">
+        <!-- <div class="cut">
+          <div class="cutout"></div>
+        </div> -->
+      </div>
+    </section>
+  </main>
+  <script src="./js/index.js"></script>
+</body>
+</html>
